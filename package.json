@@ -1,0 +1,52 @@
+{
+  "name": "takaiwa-kanri",
+  "version": "1.0.0",
+  "description": "高岩工業の案件・日報・見積・代理店回答・請求をつなぐ工事管理",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "dev": "vite",
+    "dev:api": "tsx scripts/dev-server.ts",
+    "build": "tsc --noEmit && vite build",
+    "test": "vitest run",
+    "test:e2e": "playwright test",
+    "password:hash": "tsx scripts/password.ts",
+    "test:netlify": "tsx scripts/netlify-smoke.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kametyosu/takaiwa-kanri.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/kametyosu/takaiwa-kanri/issues"
+  },
+  "homepage": "https://github.com/kametyosu/takaiwa-kanri#readme",
+  "dependencies": {
+    "@netlify/blobs": "^11.1.9",
+    "lucide-react": "^1.72.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@netlify/dev": "^5.2.0",
+    "@playwright/test": "^1.65.0",
+    "@types/node": "^26.6.6",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "netlify-cli": "^27.17.0",
+    "prettier": "^3.9.10",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.3",
+    "vite": "^8.3.8",
+    "vitest": "^5.1.0"
+  },
+  "private": true,
+  "engines": {
+    "node": ">=22.13.0"
+  }
+}
